@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.oc937458.mystore.MyStore">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow>
+            <ImageButton android:src="@drawable/dasani"
+                android:onClick="dasaniclick"
+                android:nestedScrollingEnabled="false" />
+            <TextView android:text="Dasani $2.00"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textSize="@dimen/abc_text_size_body_2_material"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+            <ImageButton android:src="@drawable/oatmeal"
+                android:onClick="fruitoatmealclick" />
+            <TextView android:text="Fruit Oatmeal $2.00"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textSize="@dimen/abc_text_size_body_2_material"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+            <ImageButton android:src="@drawable/hotcake"
+                android:onClick="hotcakesclick" />
+            <TextView android:text="Hotcakes $2.00"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textSize="@dimen/abc_text_size_body_2_material"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+            <ImageButton android:src="@drawable/sausage_bis"
+                android:onClick="sausagebiscuitclick" />
+            <TextView android:text="Sausage Biscuit $1.99"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textSize="@dimen/abc_text_size_body_2_material"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+            <ImageButton android:src="@drawable/bacon_egg"
+                android:onClick="baconeggbiscuitclick" />
+            <TextView android:text="Bacon Egg Biscuit $2.00"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textSize="@dimen/abc_text_size_body_2_material"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+            <ImageButton android:src="@drawable/egg_sausage"
+                android:onClick="eggsausageclick" />
+            <TextView android:text="Egg Sausage $2.00"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textSize="@dimen/abc_text_size_body_2_material"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+            <ImageButton android:src="@drawable/burrito"
+                android:onClick="sausageburritoclick" />
+            <TextView android:text="Sausage Burrito $1.75"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:textSize="@dimen/abc_text_size_body_2_material"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROCESS ORDER"
+            android:id="@+id/processButton"
+            android:onClick="processOrder" />
+        
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
